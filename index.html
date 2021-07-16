@@ -1,52 +1,45 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="mystyles.css">
-</head>
+    <link rel="stylesheet" href="mystyles.css" />
+  </head>
 
-<body>
-    <div id="header">
-        <h1>Rock Paper Sissors</h1>
+  <body>
+    <h1>Rock Paper Sissors</h1>
 
+    <div id="main" class="main">
+      <div id="human" class="human">
+        <h3 class="human__h3">Human</h3>
+        <p id="hscore" class="human__p">0</p>
+        <div class="buttongroup" class="human__buttongroup">
+          <button id="hselectrock" class="human__button">Rock</button>
+          <button id="hselectpaper" class="human__button">Paper</button>
+          <button id="hselectsissors" class="human__button">Sissors</button>
+        </div>
+        <p id="h_choice" class="human__p"></p>
+        <img id="h_imgchoice" src="" width="200px" class="human__img" />
+      </div>
+
+      <div class="center">
+        <h3 class="center__h3">Vs</h3>
+        <p id="roundresult" class="center__p"></p>
+      </div>
+
+      <div id="computer" class="computer">
+        <h3 class="computer__h3">Computer</h3>
+        <p id="cscore" class="computer__p">0</p>
+        <div class="computer__buttongroup">
+          <button class="computer__button">Rock</button>
+          <button class="computer__button">Paper</button>
+          <button class="computer__button">Sissors</button>
+        </div>
+        <p id="c_choice" class="computer__p"></p>
+        <img id="c_imgchoice" src="" class="computer__img" />
+      </div>
     </div>
-
-    <div id="main">
-
-
-        <div id="human">
-            <h3>Human</h3>
-            <p id="hscore">0</p>
-            <div class="buttongroup">
-                <button id="hselectrock">Rock</button>
-                <button id="hselectpaper">Paper</button>
-                <button id="hselectsissors">Sissors</button>
-            </div>
-            <p id="h_choice"></p>
-            <img id="h_imgchoice" src="" width="200px" height="200px" style="display:none">
-        </div>
-
-        <div>
-            <h3>Vs</h3>
-            <p id="roundresult" style="margin-top:50px;"></p>
-        </div>
-
-        <div id="computer">
-            <h3>Computer</h3>
-            <p id="cscore">0</p>
-            <div class="buttongroup">
-                <button>Rock</button>
-                <button>Paper</button>
-                <button>Sissors</button>
-            </div>
-            <p id="c_choice"></p>
-            <img id="c_imgchoice" src="" width="200px" height="200px" style="display:none">
-        </div>
-    </div>
-    <script src="myjs.js">
-    </script>
-</body>
-
+    <script src="myjs.js"></script>
+  </body>
 </html>
